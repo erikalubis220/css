@@ -4,7 +4,9 @@
   // =====================================
   const allowedHosts = [
     'https://madinaelectriccentre.com/installment/',
-    'https://madinaelectriccentre.com/'
+    'https://madinaelectriccentre.com/',
+    'https://www.gimt.edu.in/',
+    'https://www.gimt.edu.in/about'
   ];
 
   const config = {
