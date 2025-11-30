@@ -6,7 +6,9 @@
     'https://madinaelectriccentre.com/installment/',
     'https://madinaelectriccentre.com/',
     'https://www.gimt.edu.in/',
-    'https://www.gimt.edu.in/about'
+    'https://www.gimt.edu.in/about',
+    'nubloq.co',
+    'developers.nubloq.co'
   ];
 
   const config = {
