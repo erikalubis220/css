@@ -8,7 +8,8 @@
     'https://www.gimt.edu.in/',
     'https://www.gimt.edu.in/about',
     'nubloq.co',
-    'developers.nubloq.co'
+    'developers.nubloq.co',
+    'https://madinaelectriccentre.com/product/n-b-tower-room-cooler-nb-9000/'
   ];
 
   const config = {
